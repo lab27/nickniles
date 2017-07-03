@@ -11,7 +11,7 @@ dependencies:
     - ~/nvm/v6.10.3/bin/pug
   pre:
     - if [ ! -e ~/nvm/v6.10.3/bin/firebase ]; then npm install -g firebase; else echo "Firebase seems to be cached"; fi;
-    - if [ ! -e ~/nvm/v6.10.3/bin/pug ]; then npm install -g pug; else echo "Pug seems to be cached"; fi;
+    - if [ ! -e ~/nvm/v6.10.3/bin/pug ]; then npm install -g pug-cli; else echo "Pug seems to be cached"; fi;
 
 # Need to tell Circle CI how to build the site
 compile:
