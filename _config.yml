@@ -33,4 +33,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
 exclude: [vendor]
-plugins: [pug]
+plugins_dir: _plugins
