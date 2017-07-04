@@ -58,6 +58,7 @@ $on-laptop:        1366px !default;
 
 html, body {
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 body {
@@ -73,11 +74,10 @@ body {
   }
 }
 
-section {
+.whitebox {
   font-weight: 700;
   padding: 24px;
-  // min-height: calc(100vh - 24px);
-  // position: absolute;
+  max-width: 60rem;
   background-color: white;
   color: #181a27;
   letter-spacing: -.021rem;
