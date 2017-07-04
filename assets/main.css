@@ -473,7 +473,8 @@ pre {
   line-height: 1.2; }
 
 html, body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -487,18 +488,19 @@ body {
     body {
       padding: 48px; } }
 
-section {
+.whitebox {
   font-weight: 700;
   padding: 24px;
+  max-width: 60rem;
   background-color: white;
   color: #181a27;
   letter-spacing: -.021rem;
   font-size: 5vw; }
   @media screen and (min-width: 600px) {
-    section {
+    .whitebox {
       padding: 36px;
       font-size: 3vw; } }
   @media screen and (min-width: 1366px) {
-    section {
+    .whitebox {
       padding: 48px;
       font-size: 3rem; } }
