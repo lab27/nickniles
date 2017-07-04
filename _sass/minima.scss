@@ -63,34 +63,60 @@ html, body {
 
 body {
   margin: 0;
-  padding: 24px;
-  background: url('img/colors.svg') no-repeat center center;
-  background-size: cover;
+  // padding: 24px;
+  color: #181a27;
+  padding-top: 700px;
   @include media-query($on-palm){
-    padding: 36px;
+    // padding: 36px;
   }
   @include media-query($on-laptop){
-    padding: 48px;
+    // padding: 48px;
   }
 }
 
-.whitebox {
+h1 {
   font-weight: 700;
-  padding: 24px;
-  max-width: 60rem;
-  background-color: white;
-  color: #181a27;
+  max-width: 54rem;
   letter-spacing: -.021rem;
   font-size: 5vw;
 
   @include media-query($on-palm){
-    padding: 36px;
     font-size: 3vw;
   }
 
     @include media-query($on-laptop){
-    padding: 48px;
     font-size: 3rem;
+    bottom:48px;
+    left:48px;
   }
 }
 
+section {
+  max-width: 50rem;
+  margin:0 auto;
+
+  .center {
+    text-align: center;
+  }
+}
+
+.sprite {
+    width: 500px;
+    height: 666px;
+    background-image: url(img/nick_niles_spritesheet.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left:-250px;
+    top: -20px;
+
+    &:hover {
+      animation: glitch 0.4s steps(3);
+    }
+}
+
+@keyframes glitch {
+   100% { background-position: -1500px; }
+}
