@@ -11,11 +11,13 @@ $base-font-weight: 700 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.2 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit:        12px !default;
+$spacing-unit-medium:  calc($spacing-unit * 1.5) !default;
+$spacing-unit-large:        calc($spacing-unit * 2) !default;
 
 $text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-$brand-color:      #2a7ae2 !default;
+$background-color: #fff !default;
+$brand-color:      #111 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -45,80 +47,139 @@ $on-laptop:        1366px !default;
   font-size: $base-font-size * $ratio;
 }
 
+@mixin baseline-grid(){
+  background-image: linear-gradient(to bottom,#0ff 0,rgba(255,255,255,0)1px);
+    background-repeat: repeat-y;
+    background-size: 100% 1rem;
+}
+
 // Import partials.
 @import
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting"
+  "minima/syntax-highlighting",
+  "sassline-base",
+  "show-grid"
 ;
 
-:root {
-  line-height: 1.2;
-}
+//from sassline demo:
+.section {
+  padding: 2rem 0;
 
-html, body {
-  min-height: 100vh;
-  box-sizing: border-box;
+  @include breakpoint(break-1) {
+    padding: 3rem 0;
+  }
+
+  @include breakpoint(break-2) {
+    padding: 4rem 0;
+  }
 }
 
 body {
-  margin: 0;
-  padding: 24px;
-  color: #181a27;
-  // padding-top: 700px;
-  @include media-query($on-palm){
-    padding: 36px;
-  }
-  @include media-query($on-laptop){
-    padding: 48px;
-  }
+  padding: 12px;
 }
 
-h1 {
-  font-weight: 700;
-  max-width: 54rem;
-  letter-spacing: -.021rem;
-  font-size: 8vw;
+// :root {
+//   line-height: 1.2;
+// }
 
-  @include media-query($on-palm){
-    font-size: 5vw;
+// html, body {
+//   min-height: 100vh;
+//   box-sizing: border-box;
+//   @include baseline-grid();
+// }
+
+.homenav {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-bottom: $spacing-unit;
+  &-icon {
+    max-width: 60px;
+    margin:0 auto;
   }
 
-    @include media-query($on-laptop){
-    font-size: 3rem;
-    bottom:48px;
-    left:48px;
-  }
-}
-
-section {
-  max-width: 50rem;
-  margin:0 auto;
-  margin-bottom: 1.2rem;
-  padding-top: .75rem;
-
-  .center {
-    text-align: center;
-  }
-}
-
-.sprite {
-    width: 500px;
-    height: 666px;
-    background-image: url(img/nick_niles_spritesheet.jpg);
-    background-repeat: no-repeat;
+  span {
+    font-size: 21px;
     display: block;
-    margin: 0 auto;
-    position: absolute;
-    transform: scale(.8);
-    left: -21px;
-    top:-23px;
-
-    &:hover {
-      animation: glitch 0.2s steps(3);
-    }
+    margin-top: 6px;
+  }
 }
 
-@keyframes glitch {
-   100% { background-position: -1500px; }
+// body {
+//   margin: 0;
+//   padding: $spacing-unit;
+//   color: #181a27;
+//   // padding-top: 700px;
+//   @include media-query($on-palm){
+//     padding: $spacing-unit-medium;
+//   }
+//   @include media-query($on-laptop){
+//     padding: $spacing-unit-large;
+//   }
+// }
+
+// h1 {
+//   font-weight: 700;
+//   max-width: 54rem;
+//   letter-spacing: -.021rem;
+//   font-size: 8vw;
+
+//   @include media-query($on-palm){
+//     font-size: 5vw;
+//   }
+
+//     @include media-query($on-laptop){
+//     font-size: 3rem;
+//     bottom:48px;
+//     left:48px;
+//   }
+// }
+
+// section {
+//   max-width: 50rem;
+//   margin:0 auto;
+//   margin-bottom: 1.2rem;
+//   padding-top: .75rem;
+
+//   .center {
+//     text-align: center;
+//   }
+
+//   &.gutterless {
+//     margin-left: -$spacing-unit;
+//     margin-right: -$spacing-unit;
+//   }
+
+// }
+
+// p {
+//   @include relative-font-size(1.5);
+//   font-weight: 300;
+// }
+
+.hero {
+    max-width: 500px;
+    margin:0 auto;
 }
+
+// .sprite {
+//     width: 500px;
+//     height: 666px;
+//     background-image: url(img/nick_niles_spritesheet.jpg);
+//     background-repeat: no-repeat;
+//     display: block;
+//     margin: 0 auto;
+//     // position: absolute;
+//     transform: scale(.8);
+//     left: -21px;
+//     top:-23px;
+
+//     &:hover {
+//       animation: glitch 0.2s steps(3);
+//     }
+// }
+
+// @keyframes glitch {
+//    100% { background-position: -1500px; }
+// }

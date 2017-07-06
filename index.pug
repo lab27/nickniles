@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
-//- section.center
-//-     .sprite
-section.center
-    img(src="assets/img/bison.svg", alt="Nick Niles Bison")
-section.intro
-    h1 {{site.description}}
-    
+section#baseline
+  .section.typeset
+    .single-measure
+      img(src="assets/img/bison.svg", alt="Nick Niles Bison").hero
+      h1 {{site.description}}
+      ul
+        li: a(href="about") About Me
+        li: a(href="work") Recent Projects
