@@ -479,7 +479,9 @@ html, body {
 body {
   margin: 0;
   padding: 24px;
-  color: #181a27; }
+  color: #181a27;
+  background-image: linear-gradient(#eee 1px, transparent 1px);
+  background-size: 100% 12px; }
   @media screen and (min-width: 600px) {
     body {
       padding: 36px; } }
@@ -491,15 +493,14 @@ h1 {
   font-weight: 700;
   max-width: 54rem;
   letter-spacing: -.021rem;
-  font-size: 8vw; }
-  @media screen and (min-width: 600px) {
-    h1 {
-      font-size: 5vw; } }
-  @media screen and (min-width: 1366px) {
-    h1 {
-      font-size: 3rem;
-      bottom: 48px;
-      left: 48px; } }
+  font-size: 2rem;
+  line-height: 36px;
+  margin-top: -3px; }
+
+h3 {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 36px; }
 
 section {
   max-width: 50rem;
