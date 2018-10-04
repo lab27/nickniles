@@ -68,6 +68,7 @@ $on-laptop: 1366px !default;
 }
 
 body {
+  background-color: #f4f4f4;
     margin: 0;
     padding: 24px;
     color: #181a27; // Demonstrate the vertical rhythm at 12px
@@ -179,21 +180,21 @@ img+p.caption {
     margin: 0 auto;
 }
 
-// .sprite {
-//     width: 500px;
-//     height: 666px;
-//     background-image: url(img/nick_niles_spritesheet.jpg);
-//     background-repeat: no-repeat;
-//     display: block;
-//     margin: 0 auto;
-//     // position: absolute;
-//     transform: scale(.8);
-//     left: -21px;
-//     top:-23px;
-//     &:hover {
-//       animation: glitch 0.2s steps(3);
-//     }
-// }
-// @keyframes glitch {
-//    100% { background-position: -1500px; }
-// }
+ul {
+  list-style: none;
+
+  li {
+    padding-left: 1rem;
+    &:before {
+      content: '';
+      width: .5rem;
+      height: .5rem;
+      border-radius: .25rem;
+      margin-left: -1rem;
+      margin-right: .5rem;
+      background-color: lightgreen;
+      position: relative;
+      display: inline-block;
+    }
+  }
+}
