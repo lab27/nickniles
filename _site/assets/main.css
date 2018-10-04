@@ -544,8 +544,7 @@ body {
 .typeset p {
   line-height: 2rem;
   margin-bottom: 1.43999rem;
-  padding-top: 0.56001rem;
-  font-feature-settings: 'kern', 'onum', 'liga'; }
+  padding-top: 0.56001rem; }
   @media screen and (min-width: 40em) {
     .typeset p {
       margin-bottom: 1.4007rem;
@@ -738,16 +737,13 @@ body {
     .typeset ul, .typeset ol {
       margin-bottom: 1.3821rem;
       padding-top: 0.6179rem; } }
-  .typeset ul li, .typeset ol li {
-    font-feature-settings: 'kern', 'onum', 'liga';
+  @media screen and (min-width: 40em) {
+    .typeset ul li, .typeset ol li {
+      margin-left: 0; } }
+  .typeset ul li ol, .typeset ul li ul, .typeset ol li ol, .typeset ol li ul {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
     margin-left: 2rem; }
-    @media screen and (min-width: 40em) {
-      .typeset ul li, .typeset ol li {
-        margin-left: 0; } }
-    .typeset ul li ol, .typeset ul li ul, .typeset ol li ol, .typeset ol li ul {
-      padding-top: 1rem;
-      margin-bottom: 1rem;
-      margin-left: 2rem; }
 .typeset ol {
   list-style-type: none; }
   .typeset ol li {
@@ -796,7 +792,6 @@ body {
       margin-bottom: 1.3821rem;
       padding-top: 0.6179rem; } }
   .typeset dl dt, .typeset dl dd {
-    font-feature-settings: 'kern', 'onum', 'liga';
     margin-left: 2rem; }
     @media screen and (min-width: 40em) {
       .typeset dl dt, .typeset dl dd {
