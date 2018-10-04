@@ -16,8 +16,7 @@
 title: Nick Niles
 email: nickyniles@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm Nick Niles, 
-  a digital product designer from California, living in Zürich.
+  I’m Nick Niles, an American designer, art director, web developer, musician, and founder of Pastiche GmbH in Zürich, Switzerland. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
@@ -28,6 +27,12 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-pug
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor"]
 plugins_dir: _plugins
-# plugins: [pug]
+# plugins: 
+#   - jekyll-pug
+breadcrumbs:
+  root:
+    hide: true  # show breadcrumbs on root/home page
+    image: false # Show image or title text

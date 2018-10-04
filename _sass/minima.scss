@@ -106,6 +106,15 @@ body {
   }
 }
 
+img + p.caption {
+  margin-top:-1rem;
+}
+
+.portfolio img {
+  box-sizing: border-box;
+  border:1px solid #999;
+}
+
 // body {
 //   margin: 0;
 //   padding: $spacing-unit;

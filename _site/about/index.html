@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>About</title>
-  <meta name="description" content="I&#39;m Nick Niles, a digital product designer from California, living in Zürich.">
+  <meta name="description" content="I’m Nick Niles, an American designer, art director, web developer, musician, and founder of Pastiche GmbH in Zürich, Switzerland. ">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://0.0.0.0:4000/about/">
+  <link rel="canonical" href="http://localhost:4000/about/">
   <link rel="alternate" type="application/rss+xml" title="Nick Niles" href="/feed.xml">
   
   
@@ -18,24 +18,112 @@
 
 
   <body>
-    <a href="#" id="grid-toggle"></a>
+    <!-- <a href="#" id="grid-toggle"></a> -->
 
 
-<a href="/" class="homenav">
-    <!--<img class="homenav-icon" src="/assets/img/bison-simple.svg" alt="HOME" title="Home"><br>-->
-    <!--<span>HOME</span>-->
-    home / about
-</a>
+<nav class="breadcrumbs bootstrap hidden-sm-down" >
+  <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+    
+    
+      
+
+      
+
+      
+
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/"><span property="name">Nick Niles</span><meta property="position" content="1" /></a>
+      </li>
+    
+      
+
+      
+
+      
+        <li class="breadcrumb-item" property="itemListElement" typeof="ListItem"><span property="name">About</span><meta property="position" content="2" /></li>
+        
+
+  </ol>
+</nav>
+
+
+<!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
+<style>
+nav.breadcrumbs.bootstrap {
+  /* from Twitter Bootstrap 4 */
+  /* If you already use Twitter, you do not need these css lines above, cause they already in Twitter Bootstrap */
+  /* Additions: image integration */
+}
+nav.breadcrumbs.bootstrap ol {
+  margin-left: 0
+}
+nav.breadcrumbs.bootstrap .breadcrumb {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #f1f2ed;
+  border-radius: 0.25rem;
+}
+nav.breadcrumbs.bootstrap .breadcrumb::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item {
+  float: left;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #818a91;
+  content: "/";
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item-active {
+  color: #818a91;
+}
+
+nav.breadcrumbs.bootstrap .breadcrumb a.breadcrumb-item:after {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  content: "/";
+  text-decoration: none;
+}
+nav.breadcrumbs.bootstrap .breadcrumb .icon:after {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #818a91;
+  content: "/";
+}
+nav.breadcrumbs.bootstrap .breadcrumb .icon {
+  display: inline-block;
+}
+nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
+  height: 0.7rem;
+  width: 0.7rem;
+}
+</style>
+
+
 <section id="baseline"><div class="section typeset"><div class="single-measure"><img src="/assets/img/nick_niles_whitebg.jpg" alt="Nick Niles" title="Nick Niles"/><h1>Nick Niles</h1><p>I'm a digital product designer and speaker with 20 years’ experience helping multinational corporations and small business reach their goals through thoughtful user-centered design. 
 </p><p>With my background in digital design and Masters degree in Film Directing from Columbia University, I enjoy telling stories through motion graphics, animations, and rich interactive experiences. 
 </p><p>I’m especially interested in the power of high-fidelity interactive prototypes to help teams save time and money.
-</p><p>These are my main areas of interest...</p></div><h2>UX &amp; UI Design</h2><p>I've had the pleasure of designing a wide variety of websites, products and games over the years, from huge e-learning platforms to smart home apps.</p><img src="/assets/img/about/wr-ui1.jpg" alt="White Risk UI"/><p class="caption">One of the thousands of informational pages on White Risk</p><img src="/assets/img/about/prometheus.jpg" alt="Smart Home App"/><p class="caption">Early mockups for a "smart home" app</p><h2>UI Prototyping</h2><p>Prototypes make everyone happy! Test users and stakeholders are happy because they get an accurate vision of the final product. Designers are happy because they can respond to feedback with minimal clicks and drags. Developers are happy because the prototype communicates precisely what’s to be built.</p><p>Building a prototype of an app, website or feature is a great way to solve a lot of design problems early on, before any expensive production code is written. After some intial sketches and dabbling in Photoshop, Illustrator or Sketch, I tend to dive right into the browser and finish the design in HTML/CSS/Javascript.
+</p><p>These are my main areas of interest...</p><h2>UX &amp; UI Design</h2><p>I've had the pleasure of designing a wide variety of websites, products and games over the years, from huge e-learning platforms to smart home apps.</p><img src="/assets/img/about/wr-ui1.jpg" alt="White Risk UI"/><p class="caption">One of the thousands of informational pages on White Risk</p><img src="/assets/img/about/prometheus.jpg" alt="Smart Home App"/><p class="caption">Early mockups for a "smart home" app</p><h2>UI Prototyping</h2><p>Prototypes make everyone happy! Test users and stakeholders are happy because they get an accurate vision of the final product. Designers are happy because they can respond to feedback with minimal clicks and drags. Developers are happy because the prototype communicates precisely what’s to be built.</p><p>Building a prototype of an app, website or feature is a great way to solve a lot of design problems early on, before any expensive production code is written. After some intial sketches and dabbling in Photoshop, Illustrator or Sketch, I tend to dive right into the browser and finish the design in HTML/CSS/Javascript.
 </p><h2>Graphic Design</h2><img src="/assets/img/about/gestohlene.jpg" alt=""/><img src="/assets/img/about/origins.jpg" alt=""/><h2>Illustration</h2><p>I started my "career" as a designer when my dad brought home one of the early Macintosh computers, when I was a child. I immediately began using MacPaint to draw pictures of my favorite athletes. 
 </p><img src="/assets/img/about/food.jpg" alt=""/><p>Since then, I've expanded my repertoire to include things like color, for example. </p><img src="/assets/img/about/jj.jpg" alt=""/><h2>Motion Graphics</h2><img src="/assets/img/about/mail.gif" alt="Post"/><img src="/assets/img/about/senetti.jpg" alt="Senetti"/><p>You can find some motion graphics and animation samples here: 
 <a href="http://niles.ch/#portfolio">niles.ch</a>
 </p><h2>3D Visualization &amp; Animation</h2><p>For the <a href="http://whiterisk.ch" target="_blank">White Risk</a> project at Atfront AG, I spent the better part of 2 years working in <a href="http://maxon.net" target="_blank">Cinema 4D</a>, the popular 3D graphics and animation package. In the process, I learned many techniques in modeling and rendering.
 </p><img src="/assets/img/about/wr1.gif" alt=""/><p class="caption">A White Risk chapter menu</p><img src="/assets/img/about/kitchen.jpg" alt=""/><p class="caption">Architectural visualization</p><h2>Public Speaking</h2><p>I enjoy exchanging knowledge with others through speaking, mentoring, or just meeting casually for coffee. Here's a talk I gave at Frontendconf Zürich:
-</p><h2>More info</h2><p>I live with my wife and son in Zürich, where my music has grown folkier and my long runs shorter. I'm part-time Head of Product Design at <a href="http://voicerepublic.com" target="_blank">Voice Republic</a>.</p></div></section>
+</p><h2>More info</h2><p>I live with my wife and son in Zürich, where my music has grown folkier and my long runs shorter. I'm part-time Head of Product Design at <a href="http://voicerepublic.com" target="_blank">Voice Republic</a>.</p></div></div></section>
 
 <script src="/assets/js/app.js"></script>
   </body>

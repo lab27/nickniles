@@ -1,0 +1,11 @@
+---
+layout: default
+---
+| {% include nav-breadcrumbs.html %}
+
+section#baseline.portfolio
+  .section.typeset
+    .single-measure
+      h1 {{page.title | escape}}
+      p.caption {{page.description}}
+      | {{content}}

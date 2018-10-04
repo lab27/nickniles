@@ -1240,6 +1240,13 @@ body {
     display: block;
     margin-top: 6px; }
 
+img + p.caption {
+  margin-top: -1rem; }
+
+.portfolio img {
+  box-sizing: border-box;
+  border: 1px solid #999; }
+
 .hero {
   max-width: 500px;
   margin: 0 auto; }
