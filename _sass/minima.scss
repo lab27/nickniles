@@ -76,34 +76,44 @@ $on-laptop:        1366px !default;
 }
 
 body {
-  padding: 12px;
+  margin: 0;
+  padding: 24px;
+  color: #181a27;
+  // Demonstrate the vertical rhythm at 12px
+  background-image: linear-gradient(#eee 1px, transparent 1px);
+  background-size: 100% 12px; 
+  // padding-top: 700px;
+  @include media-query($on-palm){
+    padding: 36px;
+  }
+  @include media-query($on-laptop){
+    padding: 48px;
+  }
 }
 
-// :root {
-//   line-height: 1.2;
-// }
+h1 {
+  font-weight: 700;
+  max-width: 54rem;
+  letter-spacing: -.021rem;
+  font-size: 2rem;
+  line-height: 36px;
+  margin-top: -3px;
 
-// html, body {
-//   min-height: 100vh;
-//   box-sizing: border-box;
-//   @include baseline-grid();
-// }
+  // @include media-query($on-palm){
+  //   font-size: 5vw;
+  // }
 
-.homenav {
-  text-align: center;
-  width: 100%;
-  display: block;
-  margin-bottom: $spacing-unit;
-  &-icon {
-    max-width: 60px;
-    margin:0 auto;
-  }
+  //   @include media-query($on-laptop){
+  //   font-size: 3rem;
+  //   bottom:48px;
+  //   left:48px;
+  // }
+}
 
-  span {
-    font-size: 21px;
-    display: block;
-    margin-top: 6px;
-  }
+h3 {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 36px;
 }
 
 img + p.caption {

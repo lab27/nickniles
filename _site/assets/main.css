@@ -523,12 +523,12 @@ html {
       font-size: 118.75%; } }
 
 body {
-  font-size: 1.33333rem;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2rem; }
-  @media screen and (min-width: 40em) {
+  margin: 0;
+  padding: 24px;
+  color: #181a27;
+  background-image: linear-gradient(#eee 1px, transparent 1px);
+  background-size: 100% 12px; }
+  @media screen and (min-width: 600px) {
     body {
       font-size: 1.21429rem; } }
   @media screen and (min-width: 50em) {
@@ -541,13 +541,18 @@ body {
     body {
       font-size: 1.15789rem; } }
 
-a {
-  color: #0E58F5;
-  text-decoration: none;
-  transition: color .1s, background-color .1s; }
-  a:hover, a:active, a:focus {
-    color: #0B348B;
-    text-decoration: none; }
+h1 {
+  font-weight: 700;
+  max-width: 54rem;
+  letter-spacing: -.021rem;
+  font-size: 2rem;
+  line-height: 36px;
+  margin-top: -3px; }
+
+h3 {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 36px; }
 
 .typeset p a, .typeset li a {
   background-image: linear-gradient(to bottom, transparent 50%, #709cf9 50%);
