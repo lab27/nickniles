@@ -564,7 +564,6 @@ body {
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   color: #2E2E2E;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
   font-style: normal;
   font-weight: 700; }
 .typeset h1, .typeset .alpha {
@@ -806,7 +805,6 @@ body {
   margin-bottom: -0.60676rem;
   padding-top: 0.60676rem;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
   font-style: normal;
   font-weight: 400;
   width: 100%; }

@@ -61,7 +61,7 @@ body {
   h1, h2, h3, h4, h5, h6 {
     color: $headingColour;
     font-family: unquote(map-get($headingtype, font-family));
-    font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
+    // font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
     font-style: normal;
     font-weight: map-get($headingtype, bold);
   }
@@ -214,7 +214,7 @@ body {
     @include sassline(eta, $headingtype, 2, 0, all);
 
     font-family: unquote(map-get($headingtype, font-family));
-    font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
+    // font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
     font-style: normal;
     font-weight: map-get($headingtype, regular);
     width: 100%;
