@@ -25,7 +25,7 @@ url: "https://nickniles.com" # the base hostname & protocol for your site, e.g. 
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
   - jekyll-pug
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor"]
