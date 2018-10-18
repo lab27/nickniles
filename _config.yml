@@ -18,7 +18,7 @@ email: nickyniles@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I’m Nick Niles, an American designer, art director, web developer, musician, and founder of Pastiche GmbH in Zürich, Switzerland. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://nickniles.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 

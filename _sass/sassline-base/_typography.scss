@@ -20,48 +20,48 @@ body {
 }
 
 // Links.
-a {
-  color: $linkColour;
-  text-decoration: none;
-  transition: color .1s, background-color .1s;
+// a:link {
+//   color: $linkColour;
+//   text-decoration: none;
+//   transition: color .1s, background-color .1s;
 
-  &:hover, &:active, &:focus {
-    color: $hoverColour;
-    text-decoration: none;
-  }
-}
+//   &:hover, &:active, &:focus {
+//     color: $hoverColour;
+//     text-decoration: none;
+//   }
+// }
 
 // Styles for typeset text.
 .typeset {
 
   // Nice underlines for text links.
   p a, li a {
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($linkColour,20%) 50%);
-    background-position: 0 93%;
-    background-repeat: repeat-x;
-    background-size: 100% 0.15rem;
-    text-shadow: 0.1rem 0 $backgroundColour,
-                 0.15rem 0 $backgroundColour,
-                -0.1rem 0 $backgroundColour,
-                -0.15rem 0 $backgroundColour;
+    // background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($linkColour,20%) 50%);
+    // background-position: 0 93%;
+    // background-repeat: repeat-x;
+    // background-size: 100% 0.15rem;
+    // text-shadow: 0.1rem 0 $backgroundColour,
+    //              0.15rem 0 $backgroundColour,
+    //             -0.1rem 0 $backgroundColour,
+    //             -0.15rem 0 $backgroundColour;
 
-    &:hover, &:active, &:focus {
-      background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($hoverColour,20%) 50%);
-    }
+    // &:hover, &:active, &:focus {
+    //   background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($hoverColour,20%) 50%);
+    // }
   }
 
   // Paragraphs. OpenType ligatures and oldstyle figures enabled if available.
   p {
     @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
 
-    font-feature-settings: 'kern', 'onum', 'liga';
+    //font-feature-settings: 'kern', 'onum', 'liga';
   }
 
   // Headings. OpenType ligatures, discretionary ligatures and lining figures enabled if available.
   h1, h2, h3, h4, h5, h6 {
     color: $headingColour;
     font-family: unquote(map-get($headingtype, font-family));
-    font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
+    // font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
     font-style: normal;
     font-weight: map-get($headingtype, bold);
   }
@@ -101,8 +101,8 @@ a {
     @include baseline(zeta, $bodytype, 2, 2, all);
 
     li {
-      font-feature-settings: 'kern', 'onum', 'liga';
-      margin-left: 2rem;
+      //font-feature-settings: 'kern', 'onum', 'liga';
+      // margin-left: 2rem;
 
       @include breakpoint(break-1) {
         margin-left: 0;
@@ -192,7 +192,7 @@ a {
     @include baseline(zeta, $bodytype, 2, 2, all);
 
     dt, dd {
-      font-feature-settings: 'kern', 'onum', 'liga';
+      //font-feature-settings: 'kern', 'onum', 'liga';
       margin-left: 2rem;
 
       @include breakpoint(break-1) {
@@ -214,7 +214,7 @@ a {
     @include sassline(eta, $headingtype, 2, 0, all);
 
     font-family: unquote(map-get($headingtype, font-family));
-    font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
+    // font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
     font-style: normal;
     font-weight: map-get($headingtype, regular);
     width: 100%;
