@@ -541,25 +541,6 @@ body {
     body {
       font-size: 1.1578947368rem; } }
 
-<<<<<<< HEAD
-a {
-  color: #0E58F5;
-  text-decoration: none;
-  transition: color .1s, background-color .1s; }
-  a:hover, a:active, a:focus {
-    color: #0B348B;
-    text-decoration: none; }
-
-.typeset p a, .typeset li a {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #709cf9 50%);
-  background-position: 0 93%;
-  background-repeat: repeat-x;
-  background-size: 100% 0.15rem;
-  text-shadow: 0.1rem 0 #FCFCFC, 0.15rem 0 #FCFCFC, -0.1rem 0 #FCFCFC, -0.15rem 0 #FCFCFC; }
-  .typeset p a:hover, .typeset p a:active, .typeset p a:focus, .typeset li a:hover, .typeset li a:active, .typeset li a:focus {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #1257ea 50%); }
-=======
->>>>>>> 1030a8a57088b5ed4594a3f73515316a9627799a
 .typeset p {
   line-height: 2rem;
   margin-bottom: 1.43999rem;
@@ -753,21 +734,14 @@ a {
       padding-top: 0.6117747059rem; } }
   @media screen and (min-width: 100em) {
     .typeset ul, .typeset ol {
-<<<<<<< HEAD
       margin-bottom: 1.3820952632rem;
       padding-top: 0.6179047368rem; } }
-  .typeset ul li, .typeset ol li {
-    font-feature-settings: 'kern', 'onum', 'liga';
-=======
-      margin-bottom: 1.3821rem;
-      padding-top: 0.6179rem; } }
   @media screen and (min-width: 40em) {
     .typeset ul li, .typeset ol li {
       margin-left: 0; } }
   .typeset ul li ol, .typeset ul li ul, .typeset ol li ol, .typeset ol li ul {
     padding-top: 1rem;
     margin-bottom: 1rem;
->>>>>>> 1030a8a57088b5ed4594a3f73515316a9627799a
     margin-left: 2rem; }
 .typeset ol {
   list-style-type: none; }
