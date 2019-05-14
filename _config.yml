@@ -13,8 +13,8 @@ plugins:
   - jekyll-pug
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor"]
 plugins_dir: _plugins
-# plugins: 
-#   - jekyll-pug
+plugins: 
+  - jekyll-pug
 breadcrumbs:
   root:
     hide: true  # show breadcrumbs on root/home page
