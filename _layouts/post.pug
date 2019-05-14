@@ -7,5 +7,6 @@ section#baseline.portfolio
   .section.typeset
     .single-measure
       h1 {{page.title | escape}}
+      p.post-date {{ page.date | date: "%-d %B, %Y" }}
       p.caption {{page.description}}
       | {{content}}
